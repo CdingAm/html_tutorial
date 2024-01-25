@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>                                                              <!--nothing in header gets displaid on the page, used to link-->
+        <title>My first web page</title>
+        <link rel="icon" href="html5.png" type="image/x-icon">      <!--for the logo in the tab-->
+        <link rel="stylesheet" href="main.css" type="text/css">     <!--to add csws filr to the html-->
+        <meta charset="UTF-8">                                      <!--standard practice meta file-->
+        <meta name="author" content="Leon van Wyk">
+        <meta name="description" content="This page contains all the things i am learning how to create as I learn html.">
+</head>                                                             <!--author credit on page and can be used for SEO optimization-->
+
+    <body>
+     <header>
+        <h1>My Goals For The Year</h1>                                        <!--is used for heading 1-->
+                                               
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning html</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+                    
+            </ul>
+        </nav>
+        </header>
+        <hr>  
+<main>                                             <!--hr is the symbol for horizontal line-->
+    <article id="html">
+        <h2>I'm ready to learn html</h2>
+            <p>This is my first web page.</p>         
+                <h3>HTML5</h3>
+                <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title=""> 
+        <figure>
+            <figcaption>An example of html code</figcaption>
+            <p>
+                <code>&lt;h1&gt;Hello World!&lt;h1&gt;</code>
+            </p>
+        </figure>  
+    </article>
+        <h3>My daily schedule</h3>
+        <p>Let me tell you how:</p>
+            <ol>
+            <li>....I learn more about web dev.</li>   
+            <li>....I plan out my schedule.</li>
+            <li>....I use resources from 
+            <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a>
+            </abbr></li>                                             <!--abbr is used to show the meaning of your abbreviations-->
+        </ol>
+        <aside>
+            <details>
+                <summary>
+                    Guess the <mark>number of hours</mark> I code per day?
+                </summary>
+                <p>I start at 8am every morning and code for 3 hours.</p>
+            </details>
+        </aside>
+        <br>
+        <table>
+            <caption>My daily schedule</caption>
+            <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Morning</th>
+                <td>
+                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                </td>
+                <td>Study</td>
+            </tr>
+            <tr>
+                <th scope="row">Lunch</th>
+                <td>
+                    <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                </td>
+                <td>Eat Lunch</td>
+            </tr>
+            <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                    <time datetime="12:00">12am</time> - <time datetime="13:00">13pm</time>
+                </td>
+                <td>Study aditional courses</td>
+            </tr>
+            <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All other Times</td>
+                <td>Free time</td>
+            </tr>
+            <tr>
+                <th>Night</th>
+                <td>Sleep</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">And thats what I do every week. I just eat, work, code, and sleep.</td>
+            </tr>
+        </tfoot>
+        </table>
+
+        <hr>
+
+<section id="vacation">
+        <h2>I'm also planning a vacation</h2>
+        <p>I've been working hard and <em>need a getaway.</em></p>  <!--em is to italisize the work for emphasis-->
+        <p>I live near <abbr title="Kansas">KS</abbr> so i want to visit the beach.</p>
+
+        <h3>Places I Would Like to Visit.</h3>
+            <ul>
+        
+        <li>
+            <p>I've heard great thing about the Caribean.</p>
+            <img src="img/caribbean.jpg" alt="Caribean Beach" 
+                title="I want to visit here" width="400"  height="225" loading="lazy">
+        </li>
+
+        <li><p>I've heard good thing about going here:</p>
+        <address>                                               <!--address is to iput a location-->
+                Maragaritaville Island Reserve Riviera Cancun<br>    <!--br this is used as a line break-->
+                Bahia Petempich Puerto Morelos, Mexico<br>
+                Coloniua Morelos, Mexico 7758
+        </address>
+    <figure>
+        <img src="img/vacation.jpg" alt="Cancun Resort" title="Margarita Island Reserve" width="400" height="267" loading="lazy">
+        <figcaption>Caribean Island Resort</figcaption>
+    </figure>
+            </li>
+            </ul>
+</section>
+
+<section>
+        <h3>Places I Would Like Avoid.</h3>
+        <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>COLD!</strong></dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+        </dl>
+</section>
+</main>
+        <hr>
+<footer>
+    <p>
+        &lt; &lt; &lt; &copy;<a href="about.html">Leon van Wyk</a> &gt;&gt;&gt;  
+    </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+</footer>
+    </body>
+</html>
